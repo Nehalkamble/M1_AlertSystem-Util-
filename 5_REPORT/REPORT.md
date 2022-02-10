@@ -23,7 +23,19 @@
 
         * CHOICE 2
         * ![Screenshot 2022-02-11 001340](https://user-images.githubusercontent.com/98838252/153475283-85144ea9-7dea-4979-929b-90940a5c8ce3.png)
+            * after entering required fills
+            * ![Screenshot 2022-02-11 002854](https://user-images.githubusercontent.com/98838252/153477925-da8d5430-8481-4a71-8921-5716c9a2c45b.png)
+            * after giving vote
+            * ![Screenshot 2022-02-11 003012](https://user-images.githubusercontent.com/98838252/153478040-61ec1f37-66d3-420a-8fd5-ebc312739a37.png)
+
+
         * CHOICE 3
+        * ![Screenshot 2022-02-11 003201](https://user-images.githubusercontent.com/98838252/153478283-c23c3b5a-58af-41a5-a120-8a2932683f59.png)
+        * CHOICE 4
+        * ![Screenshot 2022-02-11 003244](https://user-images.githubusercontent.com/98838252/153478425-3584986f-fbfa-4a03-bfb9-1c7b79e5bd80.png)
+* END
+
+
 
 
         
