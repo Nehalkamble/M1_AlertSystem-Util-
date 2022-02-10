@@ -6,4 +6,5 @@
     * data of voating candidates
         * name of cnadidate
         * name of party
+        * logo of party
         
