@@ -1,4 +1,7 @@
 # M1_VotingSystem-Util-
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/ad7cb2eceb0c4fe89181f2576de5e147)](https://app.codacy.com/gh/Nehalkamble/M1_VotingSystem-Util-?utm_source=github.com&utm_medium=referral&utm_content=Nehalkamble/M1_VotingSystem-Util-&utm_campaign=Badge_Grade_Settings)
+
 ## An electoral system or voting system is a set of rules that determine how elections and referendums are conducted and how their results are determined.
 # 
 | Folder              | Description                                                                                                     |
