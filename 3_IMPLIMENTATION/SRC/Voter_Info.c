@@ -59,3 +59,4 @@ char voteInfo(int N)
         }
     }
 }
+// ALL GOOD
