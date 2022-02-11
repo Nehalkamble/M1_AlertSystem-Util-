@@ -6,18 +6,3 @@
 * State of art/ Research
     * we need voting system in our life.
 
-* 4 W's and 1H
-    * Who
-      * people who need voting
-
-    * What
-      * gives you detailed vote ststistics
-
-    * When
-      * During the time voting
-
-    * Where
-      * Local voting centre.
-
-    * How
-      * Registration and on field verification using voting ID and Phone number.
