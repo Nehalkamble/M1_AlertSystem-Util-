@@ -1,4 +1,5 @@
-# M1_AlertSystem-Util-
+# M1_VotingSystem-Util-
+##An electoral system or voting system is a set of rules that determine how elections and referendums are conducted and how their results are determined.
 # 
 | Folder              | Description                                                                                                     |
 | :------------------ | :-------------------------------------------------------------------------------------------------------------- |
