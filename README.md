@@ -15,3 +15,4 @@
 
 * Badges
 * [![Codacy Badge](https://app.codacy.com/project/badge/Grade/f85d03772df547748d1569f1acacfade)](https://www.codacy.com/gh/Nehalkamble/M1_VotingSystem-Util-/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Nehalkamble/M1_VotingSystem-Util-&amp;utm_campaign=Badge_Grade)
+* [![Codeac](https://static.codeac.io/badges/2-455661300.svg "Codeac")](https://app.codeac.io/github/Nehalkamble/M1_VotingSystem-Util-)
