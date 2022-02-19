@@ -1,0 +1,90 @@
+\hypertarget{main__voting_sys_8c_source}{}\doxysection{main\+\_\+voting\+Sys.\+c}
+\label{main__voting_sys_8c_source}\index{3\_IMPLIMENTATION/main\_votingSys.c@{3\_IMPLIMENTATION/main\_votingSys.c}}
+\mbox{\hyperlink{main__voting_sys_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00001}00001 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00002}00002 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00003}00003 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_voter___info_8h}{Voter\_Info.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00004}00004 \textcolor{keyword}{extern} \textcolor{keywordtype}{char} \mbox{\hyperlink{main__voting_sys_8c_ae3fab759efac70b1a600ba779b4d3339}{voteInfo}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00005}00005 \textcolor{keyword}{extern} \textcolor{keywordtype}{int} \mbox{\hyperlink{main__voting_sys_8c_ae5da07320343fbd125afa8279bbae498}{voting}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00007}\mbox{\hyperlink{main__voting_sys_8c_acdef7a1fd863a6d3770c1268cb06add3}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{main__voting_sys_8c_acdef7a1fd863a6d3770c1268cb06add3}{main}}()}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00008}00008 \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00009}00009     \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[0] = 0;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00010}00010     \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[1] = 0;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00011}00011     \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[2] = 0;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00012}00012     \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[3] = 0;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00013}00013     \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[4] = 0;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00014}00014     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_aef12910d7fb7a26aa6537fc029600fbb}{CdName}}[0], \textcolor{stringliteral}{"{}nill"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00015}00015     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_aef12910d7fb7a26aa6537fc029600fbb}{CdName}}[1], \textcolor{stringliteral}{"{}nitin"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00016}00016     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_aef12910d7fb7a26aa6537fc029600fbb}{CdName}}[2], \textcolor{stringliteral}{"{}mukesh"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00017}00017     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_aef12910d7fb7a26aa6537fc029600fbb}{CdName}}[3], \textcolor{stringliteral}{"{}ramesh"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00018}00018     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_aef12910d7fb7a26aa6537fc029600fbb}{CdName}}[4], \textcolor{stringliteral}{"{}amar"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00020}00020     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a3714e8033297ff01177a2b47e242a0f2}{CdParty}}[0], \textcolor{stringliteral}{"{}BJP"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00021}00021     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a3714e8033297ff01177a2b47e242a0f2}{CdParty}}[1], \textcolor{stringliteral}{"{}CONGRESS"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00022}00022     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a3714e8033297ff01177a2b47e242a0f2}{CdParty}}[2], \textcolor{stringliteral}{"{}BSP"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00023}00023     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a3714e8033297ff01177a2b47e242a0f2}{CdParty}}[3], \textcolor{stringliteral}{"{}AAP"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00024}00024     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a3714e8033297ff01177a2b47e242a0f2}{CdParty}}[4], \textcolor{stringliteral}{"{}SP"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00026}00026     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a9b9b6c7442878e579c504db52f1e8c0f}{CdSymbol}}[0], \textcolor{stringliteral}{"{}LOTUS"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00027}00027     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a9b9b6c7442878e579c504db52f1e8c0f}{CdSymbol}}[1], \textcolor{stringliteral}{"{}HAND"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00028}00028     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a9b9b6c7442878e579c504db52f1e8c0f}{CdSymbol}}[2], \textcolor{stringliteral}{"{}ELIPHANTl"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00029}00029     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a9b9b6c7442878e579c504db52f1e8c0f}{CdSymbol}}[3], \textcolor{stringliteral}{"{}BROOM"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00030}00030     strcpy(\mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a9b9b6c7442878e579c504db52f1e8c0f}{CdSymbol}}[4], \textcolor{stringliteral}{"{}BICYCLE"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00032}00032     \textcolor{keywordtype}{int} n = 0;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00033}00033 }
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00034}00034 q1:}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00035}00035     printf(\textcolor{stringliteral}{"{}*Welcome To Voting Portal*\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00036}00036 s1:}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00037}00037     printf(\textcolor{stringliteral}{"{}Please Select Your Choice (enter respetive number)\(\backslash\)n \(\backslash\)t 1) Check if you'r registered or not \(\backslash\)n \(\backslash\)t 2) Enter for voating\(\backslash\)n \(\backslash\)t 3) check current voting\(\backslash\)n \(\backslash\)t 4) exit\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00038}00038     \textcolor{keywordtype}{int} choice;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00039}00039 L1:}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00040}00040     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&choice);}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00041}00041     \textcolor{keywordflow}{if} (choice == 1)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00042}00042     \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00043}00043         \textcolor{keywordtype}{int} c = \mbox{\hyperlink{main__voting_sys_8c_ae3fab759efac70b1a600ba779b4d3339}{voteInfo}}(n);}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00044}00044         \textcolor{keywordflow}{if} (c == 1)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00045}00045             \textcolor{keywordflow}{goto} s1;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00046}00046     \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00047}00047     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (choice == 2)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00048}00048     \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00049}00049         \textcolor{keywordtype}{int} a = \mbox{\hyperlink{main__voting_sys_8c_ae5da07320343fbd125afa8279bbae498}{voting}}(n);}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00050}00050         \textcolor{keywordflow}{if} (a == 1)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00051}00051             \textcolor{keywordflow}{goto} q1;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00052}00052     \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00053}00053     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (choice == 3)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00054}00054     \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00055}00055         \textcolor{keywordtype}{int} pass = 0000;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00056}00056         \textcolor{keywordtype}{int} pas;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00057}00057     pass1:}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00058}00058         printf(\textcolor{stringliteral}{"{}enter password\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00059}00059         scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&pas);}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00060}00060         \textcolor{keywordflow}{if} (pas == pass)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00061}00061         \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00062}00062             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < 5; k++)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00063}00063             \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00064}00064                 printf(\textcolor{stringliteral}{"{}\%d) \%s \(\backslash\)t \%s \(\backslash\)t \%s       total votes gaines=\%d \(\backslash\)n"{}}, k + 1, \mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_aef12910d7fb7a26aa6537fc029600fbb}{CdName}}[k], \mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a3714e8033297ff01177a2b47e242a0f2}{CdParty}}[k], \mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a9b9b6c7442878e579c504db52f1e8c0f}{CdSymbol}}[k], \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[k]);}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00065}00065             \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00066}00066             \textcolor{keywordflow}{goto} q1;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00067}00067         \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00068}00068         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00069}00069         \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00070}00070             printf(\textcolor{stringliteral}{"{}wronf pass"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00071}00071             \textcolor{keywordflow}{goto} pass1;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00072}00072         \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00073}00073     \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00074}00074     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (choice == 4)}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00075}00075     \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00076}00076         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00079}00079     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00080}00080     \{}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00081}00081         printf(\textcolor{stringliteral}{"{}\(\backslash\)n wrong choice\(\backslash\)n choose again\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00082}00082         \textcolor{keywordflow}{goto} L1;}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00083}00083     \}}
+\DoxyCodeLine{\Hypertarget{main__voting_sys_8c_source_l00084}00084 \}}
+
+\end{DoxyCode}

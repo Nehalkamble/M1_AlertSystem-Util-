@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="main__voting_sys_8c" kind="file" language="C++">
+    <compoundname>main_votingSys.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="_voter___info_8h" local="yes">Voter_Info.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Voter_Info.h</label>
+        <link refid="_voter___info_8h"/>
+      </node>
+      <node id="1">
+        <label>3_IMPLIMENTATION/main_votingSys.c</label>
+        <link refid="main__voting_sys_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stdio.h</label>
+      </node>
+      <node id="3">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main__voting_sys_8c_1ae3fab759efac70b1a600ba779b4d3339" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char voteInfo</definition>
+        <argsstring>(int)</argsstring>
+        <name>voteInfo</name>
+        <param>
+          <type>int</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/main_votingSys.c" line="4" column="13" bodyfile="3_IMPLIMENTATION/Voter_Info.c" bodystart="4" bodyend="61" declfile="3_IMPLIMENTATION/main_votingSys.c" declline="4" declcolumn="13"/>
+      </memberdef>
+      <memberdef kind="function" id="main__voting_sys_8c_1ae5da07320343fbd125afa8279bbae498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int voting</definition>
+        <argsstring>(int)</argsstring>
+        <name>voting</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/main_votingSys.c" line="5" column="12" bodyfile="3_IMPLIMENTATION/voting_main.c" bodystart="5" bodyend="66" declfile="3_IMPLIMENTATION/main_votingSys.c" declline="5" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="main__voting_sys_8c_1acdef7a1fd863a6d3770c1268cb06add3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/main_votingSys.c" line="7" column="6" bodyfile="3_IMPLIMENTATION/main_votingSys.c" bodystart="7" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_voter___info_8h" kindref="compound">Voter_Info.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="main__voting_sys_8c_1ae3fab759efac70b1a600ba779b4d3339" kindref="member">voteInfo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main__voting_sys_8c_1ae5da07320343fbd125afa8279bbae498" kindref="member">voting</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="main__voting_sys_8c_1acdef7a1fd863a6d3770c1268cb06add3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main__voting_sys_8c_1acdef7a1fd863a6d3770c1268cb06add3" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kindref="member">votes</ref>[0]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kindref="member">votes</ref>[1]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kindref="member">votes</ref>[2]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kindref="member">votes</ref>[3]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kindref="member">votes</ref>[4]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" kindref="member">CdName</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;nill&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" kindref="member">CdName</ref>[1],<sp/></highlight><highlight class="stringliteral">&quot;nitin&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" kindref="member">CdName</ref>[2],<sp/></highlight><highlight class="stringliteral">&quot;mukesh&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" kindref="member">CdName</ref>[3],<sp/></highlight><highlight class="stringliteral">&quot;ramesh&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" kindref="member">CdName</ref>[4],<sp/></highlight><highlight class="stringliteral">&quot;amar&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" kindref="member">CdParty</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;BJP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" kindref="member">CdParty</ref>[1],<sp/></highlight><highlight class="stringliteral">&quot;CONGRESS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" kindref="member">CdParty</ref>[2],<sp/></highlight><highlight class="stringliteral">&quot;BSP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" kindref="member">CdParty</ref>[3],<sp/></highlight><highlight class="stringliteral">&quot;AAP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" kindref="member">CdParty</ref>[4],<sp/></highlight><highlight class="stringliteral">&quot;SP&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" kindref="member">CdSymbol</ref>[0],<sp/></highlight><highlight class="stringliteral">&quot;LOTUS&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" kindref="member">CdSymbol</ref>[1],<sp/></highlight><highlight class="stringliteral">&quot;HAND&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" kindref="member">CdSymbol</ref>[2],<sp/></highlight><highlight class="stringliteral">&quot;ELIPHANTl&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" kindref="member">CdSymbol</ref>[3],<sp/></highlight><highlight class="stringliteral">&quot;BROOM&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>strcpy(<ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" kindref="member">CdSymbol</ref>[4],<sp/></highlight><highlight class="stringliteral">&quot;BICYCLE&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">q1:</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;*Welcome<sp/>To<sp/>Voting<sp/>Portal*\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">s1:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Please<sp/>Select<sp/>Your<sp/>Choice<sp/>(enter<sp/>respetive<sp/>number)\n<sp/>\t<sp/>1)<sp/>Check<sp/>if<sp/>you&apos;r<sp/>registered<sp/>or<sp/>not<sp/>\n<sp/>\t<sp/>2)<sp/>Enter<sp/>for<sp/>voating\n<sp/>\t<sp/>3)<sp/>check<sp/>current<sp/>voting\n<sp/>\t<sp/>4)<sp/>exit\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>choice;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">L1:</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;choice);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(choice<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/><ref refid="main__voting_sys_8c_1ae3fab759efac70b1a600ba779b4d3339" kindref="member">voteInfo</ref>(n);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>s1;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(choice<sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a<sp/>=<sp/><ref refid="main__voting_sys_8c_1ae5da07320343fbd125afa8279bbae498" kindref="member">voting</ref>(n);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(a<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>q1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(choice<sp/>==<sp/>3)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pass<sp/>=<sp/>0000;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pas;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>pass1:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;enter<sp/>password\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scanf(</highlight><highlight class="stringliteral">&quot;%d&quot;</highlight><highlight class="normal">,<sp/>&amp;pas);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pas<sp/>==<sp/>pass)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>k<sp/>=<sp/>0;<sp/>k<sp/>&lt;<sp/>5;<sp/>k++)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;%d)<sp/>%s<sp/>\t<sp/>%s<sp/>\t<sp/>%s<sp/><sp/><sp/><sp/><sp/><sp/><sp/>total<sp/>votes<sp/>gaines=%d<sp/>\n&quot;</highlight><highlight class="normal">,<sp/>k<sp/>+<sp/>1,<sp/><ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" kindref="member">CdName</ref>[k],<sp/><ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" kindref="member">CdParty</ref>[k],<sp/><ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>.<ref refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" kindref="member">CdSymbol</ref>[k],<sp/><ref refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kindref="member">votes</ref>[k]);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>q1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;wronf<sp/>pass&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>pass1;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(choice<sp/>==<sp/>4)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\n<sp/>wrong<sp/>choice\n<sp/>choose<sp/>again\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>L1;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="3_IMPLIMENTATION/main_votingSys.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structvoter_id" kind="struct" language="C++" prot="public">
+    <compoundname>voterId</compoundname>
+    <includes refid="_voter___info_8h" local="no">Voter_Info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structvoter_id_1acbc5febe031237df5f4b44266681f1d2" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char VoterName[50][100]</definition>
+        <argsstring>[50][100]</argsstring>
+        <name>VoterName</name>
+        <qualifiedname>voterId::VoterName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="6" column="10" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvoter_id_1af56bf3240d7fb76d54be0968c359ed33" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int VoterID[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>VoterID</name>
+        <qualifiedname>voterId::VoterID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="7" column="9" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structvoter_id_1a7eb2476192373e9436559387f40e311f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int VoterMNo[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>VoterMNo</name>
+        <qualifiedname>voterId::VoterMNo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="8" column="9" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3_IMPLIMENTATION/Voter_Info.h" line="4" column="1" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="5" bodyend="9"/>
+    <listofallmembers>
+      <member refid="structvoter_id_1af56bf3240d7fb76d54be0968c359ed33" prot="public" virt="non-virtual"><scope>voterId</scope><name>VoterID</name></member>
+      <member refid="structvoter_id_1a7eb2476192373e9436559387f40e311f" prot="public" virt="non-virtual"><scope>voterId</scope><name>VoterMNo</name></member>
+      <member refid="structvoter_id_1acbc5febe031237df5f4b44266681f1d2" prot="public" virt="non-virtual"><scope>voterId</scope><name>VoterName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

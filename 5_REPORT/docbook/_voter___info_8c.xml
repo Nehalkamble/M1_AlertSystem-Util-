@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__voter___info_8c" xml:lang="en-US">
+<title>3_IMPLIMENTATION/Voter_Info.c File Reference</title>
+<indexterm><primary>3_IMPLIMENTATION/Voter_Info.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;
+#include &quot;Voter_Info.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="__voter___info_8c_1ae5da07320343fbd125afa8279bbae498">voting</link> (int)</para>
+</listitem>
+            <listitem><para>char <link linkend="__voter___info_8c_1aadce418a9ede72bf88370150c3ddd0d2">voteInfo</link> (int N)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="__voter___info_8c_1aadce418a9ede72bf88370150c3ddd0d2"/><section>
+    <title>voteInfo()</title>
+<indexterm><primary>voteInfo</primary><secondary>Voter_Info.c</secondary></indexterm>
+<indexterm><primary>Voter_Info.c</primary><secondary>voteInfo</secondary></indexterm>
+<para><computeroutput>char voteInfo (int N)</computeroutput></para><para>
+Definition at line <link linkend="__voter___info_8c_source_1l00004">4</link> of file <link linkend="__voter___info_8c_source">Voter_Info.c</link>.</para>
+</section>
+<anchor xml:id="__voter___info_8c_1ae5da07320343fbd125afa8279bbae498"/><section>
+    <title>voting()</title>
+<indexterm><primary>voting</primary><secondary>Voter_Info.c</secondary></indexterm>
+<indexterm><primary>Voter_Info.c</primary><secondary>voting</secondary></indexterm>
+<para><computeroutput>int voting (int n)</computeroutput></para><para>
+Definition at line <link linkend="_voting__main_8c_source_1l00005">5</link> of file <link linkend="_voting__main_8c_source">voting_main.c</link>.</para>
+</section>
+</section>
+</section>

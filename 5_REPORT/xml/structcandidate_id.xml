@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="structcandidate_id" kind="struct" language="C++" prot="public">
+    <compoundname>candidateId</compoundname>
+    <includes refid="_voter___info_8h" local="no">Voter_Info.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CdName[5][20]</definition>
+        <argsstring>[5][20]</argsstring>
+        <name>CdName</name>
+        <qualifiedname>candidateId::CdName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="13" column="10" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CdParty[5][20]</definition>
+        <argsstring>[5][20]</argsstring>
+        <name>CdParty</name>
+        <qualifiedname>candidateId::CdParty</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="14" column="10" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CdSymbol[5][20]</definition>
+        <argsstring>[5][20]</argsstring>
+        <name>CdSymbol</name>
+        <qualifiedname>candidateId::CdSymbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="15" column="10" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3_IMPLIMENTATION/Voter_Info.h" line="11" column="1" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="12" bodyend="16"/>
+    <listofallmembers>
+      <member refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" prot="public" virt="non-virtual"><scope>candidateId</scope><name>CdName</name></member>
+      <member refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" prot="public" virt="non-virtual"><scope>candidateId</scope><name>CdParty</name></member>
+      <member refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" prot="public" virt="non-virtual"><scope>candidateId</scope><name>CdSymbol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__voter___info_8c_source" xml:lang="en-US">
+<title>Voter_Info.c</title>
+<indexterm><primary>3_IMPLIMENTATION/Voter_Info.c</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered"><anchor xml:id="__voter___info_8c_source_1l00001"/>00001 <emphasis role="preprocessor">#include&#32;&lt;stdio.h&gt;</emphasis>
+<anchor xml:id="__voter___info_8c_source_1l00002"/>00002 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__voter___info_8h">Voter_Info.h</link>&quot;</emphasis>
+<anchor xml:id="__voter___info_8c_source_1l00003"/>00003 <emphasis role="keyword">extern</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="__voter___info_8c_1ae5da07320343fbd125afa8279bbae498">voting</link>(<emphasis role="keywordtype">int</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00004"/><link linkend="_main__voting_sys_8c_1ae3fab759efac70b1a600ba779b4d3339">00004</link> <emphasis role="keywordtype">char</emphasis>&#32;<link linkend="__voter___info_8c_1aadce418a9ede72bf88370150c3ddd0d2">voteInfo</link>(<emphasis role="keywordtype">int</emphasis>&#32;N)
+<anchor xml:id="__voter___info_8c_source_1l00005"/>00005 {
+<anchor xml:id="__voter___info_8c_source_1l00006"/>00006 
+<anchor xml:id="__voter___info_8c_source_1l00007"/>00007 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;tempVI,&#32;ch;
+<anchor xml:id="__voter___info_8c_source_1l00008"/>00008 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;welcome&#32;to&#32;voater&#32;inforamtion&#32;portal\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00009"/>00009 &#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;please&#32;enter&#32;your&#32;voter&#32;id&#32;(e.g.&#32;123,234,345,etc)\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00010"/>00010 &#32;&#32;&#32;&#32;scanf(<emphasis role="stringliteral">&quot;%d&quot;</emphasis>,&#32;&amp;tempVI);
+<anchor xml:id="__voter___info_8c_source_1l00011"/>00011 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;k&#32;=&#32;0;&#32;k&#32;&lt;&#32;50;&#32;k++)
+<anchor xml:id="__voter___info_8c_source_1l00012"/>00012 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__voter___info_8c_source_1l00013"/>00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(tempVI&#32;==&#32;<link linkend="__voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6">VdI</link>.<link linkend="_structvoter_id_1af56bf3240d7fb76d54be0968c359ed33">VoterID</link>[k])
+<anchor xml:id="__voter___info_8c_source_1l00014"/>00014 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__voter___info_8c_source_1l00015"/>00015 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;you&#32;are&#32;already&#32;registered\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00016"/>00016 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;want&#32;to&#32;proceed&#32;to&#32;voting?&#32;\n&#32;\t&#32;1)&#32;YES\n&#32;\t&#32;2)&#32;NO\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00017"/>00017 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;l2:
+<anchor xml:id="__voter___info_8c_source_1l00018"/>00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;scanf(<emphasis role="stringliteral">&quot;%d&quot;</emphasis>,&#32;&amp;ch);
+<anchor xml:id="__voter___info_8c_source_1l00019"/>00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ch&#32;==&#32;1)
+<anchor xml:id="__voter___info_8c_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__voter___info_8c_1ae5da07320343fbd125afa8279bbae498">voting</link>(ch);
+<anchor xml:id="__voter___info_8c_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ch&#32;==&#32;2)
+<anchor xml:id="__voter___info_8c_source_1l00022"/>00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+<anchor xml:id="__voter___info_8c_source_1l00023"/>00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__voter___info_8c_source_1l00024"/>00024 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__voter___info_8c_source_1l00025"/>00025 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;wrong&#32;choice&#32;enter&#32;again&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00026"/>00026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">goto</emphasis>&#32;l2;
+<anchor xml:id="__voter___info_8c_source_1l00027"/>00027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__voter___info_8c_source_1l00028"/>00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__voter___info_8c_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__voter___info_8c_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__voter___info_8c_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;numb&#32;=&#32;0;
+<anchor xml:id="__voter___info_8c_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;you&#32;are&#32;not&#32;registered\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;want&#32;to&#32;proceed&#32;to&#32;registration?&#32;\n&#32;\t&#32;1)&#32;YES\n&#32;\t&#32;2)&#32;NO\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;l3:
+<anchor xml:id="__voter___info_8c_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;scanf(<emphasis role="stringliteral">&quot;%d&quot;</emphasis>,&#32;&amp;ch);
+<anchor xml:id="__voter___info_8c_source_1l00036"/>00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ch&#32;==&#32;1)
+<anchor xml:id="__voter___info_8c_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__voter___info_8c_source_1l00038"/>00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;enter&#32;your&#32;voting&#32;id\t&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00039"/>00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;scanf(<emphasis role="stringliteral">&quot;%d&quot;</emphasis>,&#32;&amp;<link linkend="__voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6">VdI</link>.<link linkend="_structvoter_id_1af56bf3240d7fb76d54be0968c359ed33">VoterID</link>[numb]);
+<anchor xml:id="__voter___info_8c_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;enter&#32;your&#32;name\t&#32;&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;scanf(<emphasis role="stringliteral">&quot;%s&quot;</emphasis>,&#32;&amp;<link linkend="__voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6">VdI</link>.<link linkend="_structvoter_id_1acbc5febe031237df5f4b44266681f1d2">VoterName</link>[numb][100]);
+<anchor xml:id="__voter___info_8c_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;enter&#32;your&#32;mobile&#32;number\t&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00043"/>00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;scanf(<emphasis role="stringliteral">&quot;%d&quot;</emphasis>,&#32;&amp;<link linkend="__voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6">VdI</link>.<link linkend="_structvoter_id_1a7eb2476192373e9436559387f40e311f">VoterMNo</link>[numb]);
+<anchor xml:id="__voter___info_8c_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;you&apos;r&#32;registeration&#32;is&#32;sucessfull\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00045"/>00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;printf(<emphasis role="stringliteral">&quot;want&#32;to&#32;proceed&#32;to&#32;voting?&#32;\n&#32;\t&#32;1)&#32;YES\n&#32;\t&#32;2)&#32;NO\n&quot;</emphasis>);
+<anchor xml:id="__voter___info_8c_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;l4:
+<anchor xml:id="__voter___info_8c_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;scanf(<emphasis role="stringliteral">&quot;%d&quot;</emphasis>,&#32;&amp;ch);
+<anchor xml:id="__voter___info_8c_source_1l00048"/>00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ch&#32;==&#32;1)
+<anchor xml:id="__voter___info_8c_source_1l00049"/>00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="__voter___info_8c_1ae5da07320343fbd125afa8279bbae498">voting</link>(ch);
+<anchor xml:id="__voter___info_8c_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ch&#32;==&#32;2)
+<anchor xml:id="__voter___info_8c_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+<anchor xml:id="__voter___info_8c_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__voter___info_8c_source_1l00053"/>00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">goto</emphasis>&#32;l4;
+<anchor xml:id="__voter___info_8c_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__voter___info_8c_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ch&#32;==&#32;2)
+<anchor xml:id="__voter___info_8c_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+<anchor xml:id="__voter___info_8c_source_1l00057"/>00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__voter___info_8c_source_1l00058"/>00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">goto</emphasis>&#32;l3;
+<anchor xml:id="__voter___info_8c_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__voter___info_8c_source_1l00060"/>00060 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__voter___info_8c_source_1l00061"/>00061 }
+</programlisting></section>

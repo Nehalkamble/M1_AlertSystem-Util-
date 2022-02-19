@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_c4a2425bc9c68ecc571d1361b15f92ad" xml:lang="en-US">
+<title>3_IMPLIMENTATION Directory Reference</title>
+<indexterm><primary>3_IMPLIMENTATION Directory Reference</primary></indexterm>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_main__voting_sys_8c">main_votingSys.c</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__voter___info_8c">Voter_Info.c</link></para>
+</listitem>
+            <listitem><para>file <link linkend="__voter___info_8h">Voter_Info.h</link></para>
+</listitem>
+            <listitem><para>file <link linkend="_voting__main_8c">voting_main.c</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

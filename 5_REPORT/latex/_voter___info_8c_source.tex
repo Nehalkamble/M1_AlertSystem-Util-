@@ -1,0 +1,67 @@
+\hypertarget{_voter___info_8c_source}{}\doxysection{Voter\+\_\+\+Info.\+c}
+\label{_voter___info_8c_source}\index{3\_IMPLIMENTATION/Voter\_Info.c@{3\_IMPLIMENTATION/Voter\_Info.c}}
+\mbox{\hyperlink{_voter___info_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00001}00001 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_voter___info_8h}{Voter\_Info.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00003}00003 \textcolor{keyword}{extern} \textcolor{keywordtype}{int} \mbox{\hyperlink{_voter___info_8c_ae5da07320343fbd125afa8279bbae498}{voting}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00004}\mbox{\hyperlink{main__voting_sys_8c_ae3fab759efac70b1a600ba779b4d3339}{00004}} \textcolor{keywordtype}{char} \mbox{\hyperlink{_voter___info_8c_aadce418a9ede72bf88370150c3ddd0d2}{voteInfo}}(\textcolor{keywordtype}{int} N)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00005}00005 \{}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00007}00007     \textcolor{keywordtype}{int} tempVI, ch;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00008}00008     printf(\textcolor{stringliteral}{"{}welcome to voater inforamtion portal\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00009}00009     printf(\textcolor{stringliteral}{"{}please enter your voter id (e.g. 123,234,345,etc)\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00010}00010     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&tempVI);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00011}00011     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < 50; k++)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00012}00012     \{}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00013}00013         \textcolor{keywordflow}{if} (tempVI == \mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_af56bf3240d7fb76d54be0968c359ed33}{VoterID}}[k])}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00014}00014         \{}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00015}00015             printf(\textcolor{stringliteral}{"{}you are already registered\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00016}00016             printf(\textcolor{stringliteral}{"{}want to proceed to voting? \(\backslash\)n \(\backslash\)t 1) YES\(\backslash\)n \(\backslash\)t 2) NO\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00017}00017         l2:}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00018}00018             scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&ch);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00019}00019             \textcolor{keywordflow}{if} (ch == 1)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00020}00020                 \mbox{\hyperlink{_voter___info_8c_ae5da07320343fbd125afa8279bbae498}{voting}}(ch);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00021}00021             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ch == 2)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00022}00022                 \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00023}00023             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00024}00024             \{}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00025}00025                 printf(\textcolor{stringliteral}{"{}wrong choice enter again"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00026}00026                 \textcolor{keywordflow}{goto} l2;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00027}00027             \}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00028}00028         \}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00029}00029         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00030}00030         \{}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00031}00031             \textcolor{keyword}{static} \textcolor{keywordtype}{int} numb = 0;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00032}00032             printf(\textcolor{stringliteral}{"{}you are not registered\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00033}00033             printf(\textcolor{stringliteral}{"{}want to proceed to registration? \(\backslash\)n \(\backslash\)t 1) YES\(\backslash\)n \(\backslash\)t 2) NO\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00034}00034         l3:}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00035}00035             scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&ch);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00036}00036             \textcolor{keywordflow}{if} (ch == 1)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00037}00037             \{}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00038}00038                 printf(\textcolor{stringliteral}{"{}enter your voting id\(\backslash\)t"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00039}00039                 scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&\mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_af56bf3240d7fb76d54be0968c359ed33}{VoterID}}[numb]);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00040}00040                 printf(\textcolor{stringliteral}{"{}enter your name\(\backslash\)t "{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00041}00041                 scanf(\textcolor{stringliteral}{"{}\%s"{}}, \&\mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_acbc5febe031237df5f4b44266681f1d2}{VoterName}}[numb][100]);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00042}00042                 printf(\textcolor{stringliteral}{"{}enter your mobile number\(\backslash\)t"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00043}00043                 scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&\mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_a7eb2476192373e9436559387f40e311f}{VoterMNo}}[numb]);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00044}00044                 printf(\textcolor{stringliteral}{"{}you'r registeration is sucessfull\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00045}00045                 printf(\textcolor{stringliteral}{"{}want to proceed to voting? \(\backslash\)n \(\backslash\)t 1) YES\(\backslash\)n \(\backslash\)t 2) NO\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00046}00046             l4:}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00047}00047                 scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&ch);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00048}00048                 \textcolor{keywordflow}{if} (ch == 1)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00049}00049                     \mbox{\hyperlink{_voter___info_8c_ae5da07320343fbd125afa8279bbae498}{voting}}(ch);}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00050}00050                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ch == 2)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00051}00051                     \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00052}00052                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00053}00053                     \textcolor{keywordflow}{goto} l4;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00054}00054             \}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00055}00055             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (ch == 2)}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00056}00056                 \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00057}00057             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00058}00058                 \textcolor{keywordflow}{goto} l3;}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00059}00059         \}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00060}00060     \}}
+\DoxyCodeLine{\Hypertarget{_voter___info_8c_source_l00061}00061 \}}
+
+\end{DoxyCode}

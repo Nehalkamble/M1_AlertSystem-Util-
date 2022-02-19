@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="dir_c4a2425bc9c68ecc571d1361b15f92ad" kind="dir">
+    <compoundname>3_IMPLIMENTATION</compoundname>
+    <innerfile refid="main__voting_sys_8c">main_votingSys.c</innerfile>
+    <innerfile refid="_voter___info_8c">Voter_Info.c</innerfile>
+    <innerfile refid="_voter___info_8h">Voter_Info.h</innerfile>
+    <innerfile refid="voting__main_8c">voting_main.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="3_IMPLIMENTATION/"/>
+  </compounddef>
+</doxygen>

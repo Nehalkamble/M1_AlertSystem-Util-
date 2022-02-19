@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structcandidate_id" xml:lang="en-US">
+<title>candidateId Struct Reference</title>
+<indexterm><primary>candidateId</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Voter_Info.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>char <link linkend="_structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb">CdName</link> [5][20]</para>
+</listitem>
+            <listitem><para>char <link linkend="_structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2">CdParty</link> [5][20]</para>
+</listitem>
+            <listitem><para>char <link linkend="_structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f">CdSymbol</link> [5][20]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="__voter___info_8h_source_1l00011">11</link> of file <link linkend="__voter___info_8h_source">Voter_Info.h</link>.</para>
+</section>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb"/><section>
+    <title>CdName</title>
+<indexterm><primary>CdName</primary><secondary>candidateId</secondary></indexterm>
+<indexterm><primary>candidateId</primary><secondary>CdName</secondary></indexterm>
+<para><computeroutput>char CdName[5][20]</computeroutput></para><para>
+Definition at line <link linkend="__voter___info_8h_source_1l00013">13</link> of file <link linkend="__voter___info_8h_source">Voter_Info.h</link>.</para>
+</section>
+<anchor xml:id="_structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2"/><section>
+    <title>CdParty</title>
+<indexterm><primary>CdParty</primary><secondary>candidateId</secondary></indexterm>
+<indexterm><primary>candidateId</primary><secondary>CdParty</secondary></indexterm>
+<para><computeroutput>char CdParty[5][20]</computeroutput></para><para>
+Definition at line <link linkend="__voter___info_8h_source_1l00014">14</link> of file <link linkend="__voter___info_8h_source">Voter_Info.h</link>.</para>
+</section>
+<anchor xml:id="_structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f"/><section>
+    <title>CdSymbol</title>
+<indexterm><primary>CdSymbol</primary><secondary>candidateId</secondary></indexterm>
+<indexterm><primary>candidateId</primary><secondary>CdSymbol</secondary></indexterm>
+<para><computeroutput>char CdSymbol[5][20]</computeroutput></para><para>
+Definition at line <link linkend="__voter___info_8h_source_1l00015">15</link> of file <link linkend="__voter___info_8h_source">Voter_Info.h</link>.</para>
+</section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+3_IMPLIMENTATION/<link linkend="__voter___info_8h">Voter_Info.h</link></section>
+</section>

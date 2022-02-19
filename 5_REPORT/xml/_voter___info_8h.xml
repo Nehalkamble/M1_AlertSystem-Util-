@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="_voter___info_8h" kind="file" language="C++">
+    <compoundname>Voter_Info.h</compoundname>
+    <includedby refid="_voter___info_8c" local="yes">3_IMPLIMENTATION/Voter_Info.c</includedby>
+    <includedby refid="main__voting_sys_8c" local="yes">3_IMPLIMENTATION/main_votingSys.c</includedby>
+    <includedby refid="voting__main_8c" local="yes">3_IMPLIMENTATION/voting_main.c</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>3_IMPLIMENTATION/Voter_Info.c</label>
+        <link refid="_voter___info_8c"/>
+      </node>
+      <node id="1">
+        <label>3_IMPLIMENTATION/Voter_Info.h</label>
+        <link refid="_voter___info_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>3_IMPLIMENTATION/main_votingSys.c</label>
+        <link refid="main__voting_sys_8c"/>
+      </node>
+      <node id="4">
+        <label>3_IMPLIMENTATION/voting_main.c</label>
+        <link refid="voting__main_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structvoter_id" prot="public">voterId</innerclass>
+    <innerclass refid="structcandidate_id" prot="public">candidateId</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" prot="public" static="no" mutable="no">
+        <type><ref refid="structcandidate_id" kindref="compound">candidateId</ref></type>
+        <definition>candidateId CdI</definition>
+        <argsstring></argsstring>
+        <name>CdI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="17" column="13" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6" prot="public" static="no" mutable="no">
+        <type><ref refid="structvoter_id" kindref="compound">voterId</ref></type>
+        <definition>voterId VdI</definition>
+        <argsstring></argsstring>
+        <name>VdI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="18" column="9" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int votes[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>votes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="3_IMPLIMENTATION/Voter_Info.h" line="19" column="5" bodyfile="3_IMPLIMENTATION/Voter_Info.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>voter_info_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>voter_info_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="structvoter_id" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="structvoter_id_1acbc5febe031237df5f4b44266681f1d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>VoterName[50][100];</highlight></codeline>
+<codeline lineno="7" refid="structvoter_id_1af56bf3240d7fb76d54be0968c359ed33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>VoterID[50];</highlight></codeline>
+<codeline lineno="8" refid="structvoter_id_1a7eb2476192373e9436559387f40e311f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>VoterMNo[50];</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}<sp/><ref refid="structvoter_id" kindref="compound">voterId</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="structcandidate_id" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>CdName[5][20];</highlight></codeline>
+<codeline lineno="14" refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>CdParty[5][20];</highlight></codeline>
+<codeline lineno="15" refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>CdSymbol[5][20];</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}<sp/><ref refid="structcandidate_id" kindref="compound">candidateId</ref>;</highlight></codeline>
+<codeline lineno="17" refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" refkind="member"><highlight class="normal"><ref refid="structcandidate_id" kindref="compound">candidateId</ref><sp/><ref refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kindref="member">CdI</ref>;</highlight></codeline>
+<codeline lineno="18" refid="_voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6" refkind="member"><highlight class="normal"><ref refid="structvoter_id" kindref="compound">voterId</ref><sp/><ref refid="_voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6" kindref="member">VdI</ref>;</highlight></codeline>
+<codeline lineno="19" refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kindref="member">votes</ref>[5];</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="3_IMPLIMENTATION/Voter_Info.h"/>
+  </compounddef>
+</doxygen>

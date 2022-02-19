@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md_3__i_m_p_l_i_m_e_n_t_a_t_i_o_n__i_m_p_l_i_m_e_n_t_a_t_i_o_n" xml:lang="en-US">
+
+<para><itemizedlist>
+<listitem>
+<para>Following the architecture presented in src, a prototype for an Voting system has been developed.<itemizedlist>
+<listitem>
+<para>The developed prototype can be used on two os (windows and Linux) </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+</section>

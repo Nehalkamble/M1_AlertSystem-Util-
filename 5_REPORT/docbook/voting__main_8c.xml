@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_voting__main_8c" xml:lang="en-US">
+<title>3_IMPLIMENTATION/voting_main.c File Reference</title>
+<indexterm><primary>3_IMPLIMENTATION/voting_main.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;stdio.h&gt;
+#include &quot;Voter_Info.h&quot;
+#include &lt;string.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_voting__main_8c_1a1ffc21c76e77a61a9ccc14964ee160f2">voting</link> (int n)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_voting__main_8c_1a1ffc21c76e77a61a9ccc14964ee160f2"/><section>
+    <title>voting()</title>
+<indexterm><primary>voting</primary><secondary>voting_main.c</secondary></indexterm>
+<indexterm><primary>voting_main.c</primary><secondary>voting</secondary></indexterm>
+<para><computeroutput>int voting (int n)</computeroutput></para><para>
+Definition at line <link linkend="_voting__main_8c_source_1l00005">5</link> of file <link linkend="_voting__main_8c_source">voting_main.c</link>.</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.3" xml:lang="en-US">
+  <compounddef id="md_3__i_m_p_l_i_m_e_n_t_a_t_i_o_n__i_m_p_l_i_m_e_n_t_a_t_i_o_n" kind="page">
+    <compoundname>md_3_IMPLIMENTATION_IMPLIMENTATION</compoundname>
+    <title>IMPLIMENTATION</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><itemizedlist>
+<listitem><para>Following the architecture presented in src, a prototype for an Voting system has been developed.<itemizedlist>
+<listitem><para>The developed prototype can be used on two os (windows and Linux) </para>
+</listitem></itemizedlist>
+</para>
+</listitem></itemizedlist>
+</para>
+    </detaileddescription>
+    <location file="3_IMPLIMENTATION/IMPLIMENTATION.md"/>
+  </compounddef>
+</doxygen>

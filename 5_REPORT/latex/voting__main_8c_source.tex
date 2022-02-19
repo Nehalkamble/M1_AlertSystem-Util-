@@ -1,0 +1,72 @@
+\hypertarget{voting__main_8c_source}{}\doxysection{voting\+\_\+main.\+c}
+\label{voting__main_8c_source}\index{3\_IMPLIMENTATION/voting\_main.c@{3\_IMPLIMENTATION/voting\_main.c}}
+\mbox{\hyperlink{voting__main_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00001}00001 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00002}00002 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_voter___info_8h}{Voter\_Info.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00003}00003 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00005}\mbox{\hyperlink{main__voting_sys_8c_ae5da07320343fbd125afa8279bbae498}{00005}} \textcolor{keywordtype}{int} \mbox{\hyperlink{voting__main_8c_a1ffc21c76e77a61a9ccc14964ee160f2}{voting}}(\textcolor{keywordtype}{int} n)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00006}00006 \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00008}00008     \textcolor{keywordtype}{int} vChoice;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00009}00009     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k <= 50; k++)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00010}00010     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00011}00011         strcpy(\mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_acbc5febe031237df5f4b44266681f1d2}{VoterName}}[k], \textcolor{stringliteral}{"{}nill"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00012}00012         \mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_af56bf3240d7fb76d54be0968c359ed33}{VoterID}}[k] = 0;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00013}00013         \mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_a7eb2476192373e9436559387f40e311f}{VoterMNo}}[k] = 0;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00014}00014     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00015}00015     \textcolor{keyword}{static} \textcolor{keywordtype}{int} number = 0;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00016}00016     printf(\textcolor{stringliteral}{"{}enter your voting id\(\backslash\)t"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00017}00017     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&\mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_af56bf3240d7fb76d54be0968c359ed33}{VoterID}}[number]);}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00018}00018     printf(\textcolor{stringliteral}{"{}enter your name\(\backslash\)t "{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00019}00019     scanf(\textcolor{stringliteral}{"{}\%s"{}}, \&\mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_acbc5febe031237df5f4b44266681f1d2}{VoterName}}[number][100]);}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00020}00020     printf(\textcolor{stringliteral}{"{}enter your mobile number\(\backslash\)t"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00021}00021     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&\mbox{\hyperlink{_voter___info_8h_ad4c820e14f974c9c3adbb85c45fcedc6}{VdI}}.\mbox{\hyperlink{structvoter_id_a7eb2476192373e9436559387f40e311f}{VoterMNo}}[number]);}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00023}00023     printf(\textcolor{stringliteral}{"{}choose who you want to vot for\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00024}00024     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < 5; k++)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00025}00025     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00026}00026         printf(\textcolor{stringliteral}{"{}\%d) \%s \(\backslash\)t \%s \(\backslash\)t \%s \(\backslash\)n"{}}, k + 1, \mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_aef12910d7fb7a26aa6537fc029600fbb}{CdName}}[k], \mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a3714e8033297ff01177a2b47e242a0f2}{CdParty}}[k], \mbox{\hyperlink{_voter___info_8h_a582cf93446ad6ec007df1b1d53a728fd}{CdI}}.\mbox{\hyperlink{structcandidate_id_a9b9b6c7442878e579c504db52f1e8c0f}{CdSymbol}}[k]);}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00027}00027     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00028}00028 v1:}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00029}00029     scanf(\textcolor{stringliteral}{"{}\%d"{}}, \&vChoice);}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00030}00030     \textcolor{keywordflow}{if} (vChoice == 1)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00031}00031     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00032}00032         \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[0]++;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00033}00033         printf(\textcolor{stringliteral}{"{}voating sucessfull\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00034}00034         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00035}00035     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00036}00036     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (vChoice == 2)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00037}00037     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00038}00038         \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[1]++;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00039}00039         printf(\textcolor{stringliteral}{"{}voating sucessfull\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00040}00040         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00042}00042     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (vChoice == 3)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00043}00043     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00044}00044         \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[2]++;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00045}00045         printf(\textcolor{stringliteral}{"{}voating sucessfull\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00046}00046         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00047}00047     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00048}00048     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (vChoice == 4)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00049}00049     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00050}00050         \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[3]++;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00051}00051         printf(\textcolor{stringliteral}{"{}voating sucessfull\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00052}00052         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00054}00054     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (vChoice == 5)}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00055}00055     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00056}00056         \mbox{\hyperlink{_voter___info_8h_a20baa4f6d1fb690cad83709c1870ca0b}{votes}}[4]++;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00057}00057         printf(\textcolor{stringliteral}{"{}voating sucessfull\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00058}00058         \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00059}00059     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00060}00060     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00061}00061     \{}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00062}00062         printf(\textcolor{stringliteral}{"{}wrong choice select again"{}});}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00063}00063         \textcolor{keywordflow}{goto} v1;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00065}00065     number++;}
+\DoxyCodeLine{\Hypertarget{voting__main_8c_source_l00066}00066 \}}
+
+\end{DoxyCode}

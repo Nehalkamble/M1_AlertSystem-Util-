@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__voter___info_8h" xml:lang="en-US">
+<title>3_IMPLIMENTATION/Voter_Info.h File Reference</title>
+<indexterm><primary>3_IMPLIMENTATION/Voter_Info.h</primary></indexterm>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structvoter_id">voterId</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_structcandidate_id">candidateId</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structcandidate_id">candidateId</link> <link linkend="__voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd">CdI</link></para>
+</listitem>
+            <listitem><para><link linkend="_structvoter_id">voterId</link> <link linkend="__voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6">VdI</link></para>
+</listitem>
+            <listitem><para>int <link linkend="__voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b">votes</link> [5]</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="__voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd"/><section>
+    <title>CdI</title>
+<indexterm><primary>CdI</primary><secondary>Voter_Info.h</secondary></indexterm>
+<indexterm><primary>Voter_Info.h</primary><secondary>CdI</secondary></indexterm>
+<para><computeroutput><link linkend="_structcandidate_id">candidateId</link> CdI</computeroutput></para><para>
+Definition at line <link linkend="__voter___info_8h_source_1l00017">17</link> of file <link linkend="__voter___info_8h_source">Voter_Info.h</link>.</para>
+</section>
+<anchor xml:id="__voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6"/><section>
+    <title>VdI</title>
+<indexterm><primary>VdI</primary><secondary>Voter_Info.h</secondary></indexterm>
+<indexterm><primary>Voter_Info.h</primary><secondary>VdI</secondary></indexterm>
+<para><computeroutput><link linkend="_structvoter_id">voterId</link> VdI</computeroutput></para><para>
+Definition at line <link linkend="__voter___info_8h_source_1l00018">18</link> of file <link linkend="__voter___info_8h_source">Voter_Info.h</link>.</para>
+</section>
+<anchor xml:id="__voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b"/><section>
+    <title>votes</title>
+<indexterm><primary>votes</primary><secondary>Voter_Info.h</secondary></indexterm>
+<indexterm><primary>Voter_Info.h</primary><secondary>votes</secondary></indexterm>
+<para><computeroutput>int votes[5]</computeroutput></para><para>
+Definition at line <link linkend="__voter___info_8h_source_1l00019">19</link> of file <link linkend="__voter___info_8h_source">Voter_Info.h</link>.</para>
+</section>
+</section>
+</section>

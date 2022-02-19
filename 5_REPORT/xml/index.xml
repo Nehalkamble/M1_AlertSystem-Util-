@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.3" xml:lang="en-US">
+  <compound refid="structcandidate_id" kind="struct"><name>candidateId</name>
+    <member refid="structcandidate_id_1aef12910d7fb7a26aa6537fc029600fbb" kind="variable"><name>CdName</name></member>
+    <member refid="structcandidate_id_1a3714e8033297ff01177a2b47e242a0f2" kind="variable"><name>CdParty</name></member>
+    <member refid="structcandidate_id_1a9b9b6c7442878e579c504db52f1e8c0f" kind="variable"><name>CdSymbol</name></member>
+  </compound>
+  <compound refid="structvoter_id" kind="struct"><name>voterId</name>
+    <member refid="structvoter_id_1acbc5febe031237df5f4b44266681f1d2" kind="variable"><name>VoterName</name></member>
+    <member refid="structvoter_id_1af56bf3240d7fb76d54be0968c359ed33" kind="variable"><name>VoterID</name></member>
+    <member refid="structvoter_id_1a7eb2476192373e9436559387f40e311f" kind="variable"><name>VoterMNo</name></member>
+  </compound>
+  <compound refid="_i_m_p_l_i_m_e_n_t_a_t_i_o_n_8md" kind="file"><name>IMPLIMENTATION.md</name>
+  </compound>
+  <compound refid="main__voting_sys_8c" kind="file"><name>main_votingSys.c</name>
+    <member refid="main__voting_sys_8c_1ae3fab759efac70b1a600ba779b4d3339" kind="function"><name>voteInfo</name></member>
+    <member refid="main__voting_sys_8c_1ae5da07320343fbd125afa8279bbae498" kind="function"><name>voting</name></member>
+    <member refid="main__voting_sys_8c_1acdef7a1fd863a6d3770c1268cb06add3" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_voter___info_8c" kind="file"><name>Voter_Info.c</name>
+    <member refid="_voter___info_8c_1ae5da07320343fbd125afa8279bbae498" kind="function"><name>voting</name></member>
+    <member refid="_voter___info_8c_1aadce418a9ede72bf88370150c3ddd0d2" kind="function"><name>voteInfo</name></member>
+  </compound>
+  <compound refid="_voter___info_8h" kind="file"><name>Voter_Info.h</name>
+    <member refid="_voter___info_8h_1a582cf93446ad6ec007df1b1d53a728fd" kind="variable"><name>CdI</name></member>
+    <member refid="_voter___info_8h_1ad4c820e14f974c9c3adbb85c45fcedc6" kind="variable"><name>VdI</name></member>
+    <member refid="_voter___info_8h_1a20baa4f6d1fb690cad83709c1870ca0b" kind="variable"><name>votes</name></member>
+  </compound>
+  <compound refid="voting__main_8c" kind="file"><name>voting_main.c</name>
+    <member refid="voting__main_8c_1a1ffc21c76e77a61a9ccc14964ee160f2" kind="function"><name>voting</name></member>
+  </compound>
+  <compound refid="md_3__i_m_p_l_i_m_e_n_t_a_t_i_o_n__i_m_p_l_i_m_e_n_t_a_t_i_o_n" kind="page"><name>md_3_IMPLIMENTATION_IMPLIMENTATION</name>
+  </compound>
+  <compound refid="dir_c4a2425bc9c68ecc571d1361b15f92ad" kind="dir"><name>3_IMPLIMENTATION</name>
+  </compound>
+</doxygenindex>
