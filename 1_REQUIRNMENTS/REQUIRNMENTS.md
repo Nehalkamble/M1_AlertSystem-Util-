@@ -7,4 +7,6 @@
         * name of cnadidate
         * name of party
         * logo of party
+
+
         
