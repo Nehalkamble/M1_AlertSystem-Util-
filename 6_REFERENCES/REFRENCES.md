@@ -1,10 +1,10 @@
 * Software used
-    *doxigen
-    *VS Code
-    * *online sites
+    *doxigen*
+    *VS Code*
+    * *online sites*
         * github
         * codiga
         * codacy
         * codac
 
-**no other refrences
+**no other refrences**
