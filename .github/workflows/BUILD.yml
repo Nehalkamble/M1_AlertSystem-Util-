@@ -15,8 +15,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: make
       run: |
-        run: make run 3_IMPLIMENTATION
-        run: 4
+        make run 3_IMPLIMENTATION
+        4
       
       
       
