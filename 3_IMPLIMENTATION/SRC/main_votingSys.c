@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "Voter_Info.h"
-extern char voteInfo(int);
+extern int voteInfo(int);
 extern int voting(int);
 
 void main()
