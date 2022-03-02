@@ -43,7 +43,7 @@ run_test : build_test
 	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
 staticcheck : 
-	cppcheck --enable=all -iunity .
+	cppcheck --enable=all 3_IMPLIMENTATION
 
 dynamic_analysis : Build
 	valgrind ./$(call FixPath,$(PROJ_NAME).$(EXEC))
