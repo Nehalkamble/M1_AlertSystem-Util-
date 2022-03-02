@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: make run -C M1_VotingSystem-Util/3_IMPLIMENTATION
+      run: make run -C M1_VotingSystem-Util/tree/main/3_IMPLIMENTATION
  
  
