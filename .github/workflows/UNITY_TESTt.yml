@@ -1,4 +1,4 @@
-name: BUILD_test
+name: UNITY_TEST
 
 on:
   push:
