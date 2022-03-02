@@ -1,5 +1,17 @@
+
+
 PROJ_NAME = voting_system
-SRC = Voter_Info.c voting_main.c main_votingSys.c
+SRC= SRC/Voter_Info.c\
+SRC/voting_main.c\
+SRC/main_votingSys.c
+
+
+
+TEST_SRC= unity_test/test_Voter_Info.c\
+  unity_test/test_voting_main.c\
+  unity_test/test.c\
+  unity_test/unity.c
+
 
 ifdef OS
    RM = del /q
@@ -13,11 +25,36 @@ else
    endif
 endif
 
-build:
-	gcc $(SRC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+ 
+INC=-IInclude\
+-Iunity\
 
-run: build
+Build : $(SRC) 
+	gcc $(SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+
+
+build_test : 
+	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+
+run : Build
 	./$(call FixPath,$(PROJ_NAME).$(EXEC))
 
-clean:
-	$(RM) $(call FixPath,$(PROJ_NAME).$(EXEC))
+run_test : build_test
+	./$(call FixPath,$(PROJ_NAME).$(EXEC))
+
+staticcheck : 
+	cppcheck --enable=all -iunity .
+
+dynamic_analysis : Build
+	valgrind ./$(call FixPath,$(PROJ_NAME).$(EXEC))
+	
+coverage:
+	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(PROJ_NAME).$(EXEC)) -lm
+	gcov -a ./$(call FixPath,$(PROJ_NAME).$(EXEC))
+
+Clean:
+	$(RM) $(call FixPath,*.out)
+
+
+
+
