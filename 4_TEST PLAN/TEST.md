@@ -1,3 +1,56 @@
+# HIGH LEVEL TEST PLAN
+## program test
+| Test no. | choices | Input | Expected output | Actual Output | Passed Or Not |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Check if you'r registered or not | 1 | Goto registration portal | Gone registration portal | passed |
+| 2 | Enter for voating                | 2 | Goto voting portal | Goto voting portal | passed  |
+| 3 | check current voting             | 3 | Show current voting stats | Shows current voting stats | passed  |
+| 4 | exit                             | 4 | terminate | terminate | passed  |
+
+----------------------------------------------------------------------------------------------------------------------------all passed
+# workflow tests
+| Linux Build | Build | Unity | Codiga | Codacy |codeac| Static check | Dynamic check |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+[![Linux_BUILD_CHECK](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/Linux_BUILD_CHECK.yml/badge.svg)](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/Linux_BUILD_CHECK.yml)|[![BUILD](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/BUILD.yml/badge.svg)](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/BUILD.yml)|[![UNITY_TEST](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/UNITY_TESTt.yml/badge.svg)](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/UNITY_TESTt.yml)|![Codiga Badge](https://api.codiga.io/project/31204/score/svg) ![Codiga Badge](https://api.codiga.io/project/31204/status/svg)|[![Codeac](https://static.codeac.io/badges/2-455661300.svg "Codeac")](https://app.codeac.io/github/Nehalkamble/M1_VotingSystem-Util-)|![Codacy Badge](https://app.codacy.com/project/badge/Grade/f85d03772df547748d1569f1acacfade)|[![Cppcheck](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/STATIC_CHECK.yml/badge.svg)](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/STATIC_CHECK.yml)|[![Dynamiccheck](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/DYNAMIC_ANALYSIS.yml/badge.svg)](https://github.com/Nehalkamble/M1_VotingSystem-Util/actions/workflows/DYNAMIC_ANALYSIS.yml)|
+
+----------------------------------------------------------------------------------------------------------------------------all passed
+
+
+# LOW LEVEL TEST PLAN
+###  registration portal Configuration Test
+
+| Test no. | Description | Input | Expected output | Actual Output | passed/not |
+| --- | --- | --- | --- | --- | --- |
+| 01 | user input for voter id | 000 | you are already registered | you are already registered | passed |
+| 02 | user input for voter id | 100 | you are not registered | you are not registered | passed |
+| 03 |user input for voter id | 123 | you are not registered | you are not registered | passed |
+| 04 | user input for voter id | 655 | you are not registered | you are not registered | passed |
+| 05 | redirect to voting portal | yes |goto gegistration portal |gone gegistration portal | passed |
+| 06 | redirect to voting portal | no |goto main page |gone main page| passed |
+
+----------------------------------------------------------------------------------------------------------------------------all passed
+
+
+### voting portal testing
+
+| Test no. | Description | Input | Expected output | Actual Output | passed/not |
+| --- | --- | --- | --- | --- | --- |
+| 01 | user input for voter id | 000 | proceed to voting | proceeded to voting | passed |
+| 02 | options for choice | 1 | voting completed |  voting completed | passed |
+| 03 | options for choice | 3 | voting completed |  voting completed | passed |
+|04| redirect top main page after the sucessfull voting| redirect|redirected|passed|
+
+----------------------------------------------------------------------------------------------------------------------------all passed
+### voting stats check
+
+| Test no. | Description | Input | Expected output | Actual Output | passed/not |
+| --- | --- | --- | --- | --- | --- |
+| 01 | user input for password | 0000 | show voting stats | shows voting stats | passed |
+| 02 | user input for password | 5646 | show wrong password  | shows wrong password | passed |
+
+----------------------------------------------------------------------------------------------------------------------------all passed
+
+# testing priview
 * This project contains a basic voting system
     * In first step there are 4 options
     * ![Screenshot 2022-02-11 001026](https://user-images.githubusercontent.com/98838252/153474771-d3ce9ecb-7d52-496b-8af3-a2d85d97b67b.png)
