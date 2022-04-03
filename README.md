@@ -16,6 +16,6 @@
 | 4_TestPlanAndOutput | Details of test plans and procedure                                                                             |
 | 5_Report            | Documented report                                                                                               |   
 | 6_Refrences         | References   |
-
+| 7_Images&Videos      | cointains all the images used in the project and the short demo videos |
 
 
